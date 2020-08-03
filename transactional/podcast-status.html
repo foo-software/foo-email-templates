@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width" initial-scale="1">
+      <!--[if !mso]>
+          <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <![endif]-->
+      <meta name="x-apple-disable-message-reformatting">
+      <title></title>
+  </head>
+  <body style="margin:0; padding: 0">
+    <div style="font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, arial; border-top: 4px #304ffe solid; margin: 0; padding: 10px;">
+      <div style="margin: 0 auto; max-width:600px;">
+        <table width="100%">
+          <tbody>
+            <tr>
+              <td width="70%">
+                <h1 style="margin: 0; padding: 0; line-height: 40px; vertical-align: middle; font-size: 28px; font-weight: normal; text-transform: lowercase; ">Podcast Status</h1>
+              </td>
+              <td width="30%" style="text-align: right">
+                <a href="https://www.foo.software" style="border: 0; outline: 0; text-decoration: none;">
+                  <img width="40" height="40" src="https://lighthouse-check.s3.amazonaws.com/images/logo-simple-blue-light-180.png" />
+                </a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <h2 style="margin-bottom: 10px">Top Podcast</h2>
+        <table width="100%">
+          <tbody>
+            <tr>
+              <td width="30%">
+                <img width="100" height="100" src="{{topImage}}" style="width: 100%; height: auto;"/>
+              </td>
+              <td width="70%" style="padding: 10px">
+                <p style="font-size:18px;">
+                  <strong>{{topName}}</strong>
+                </p>
+                <p style="font-size:18px;">
+                  {{topDescription}}
+                </p>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <p style="font-size:18px;">
+          <strong>Podcasts</strong>: {{podcasts}}
+        </p>
+        <p style="font-size:18px;">
+          <strong>Episodes</strong>: {{episodes}}
+        </p>
+        <p style="font-size:18px;">
+          <strong>Errors</strong>: {{errors}}
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
