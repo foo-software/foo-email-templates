@@ -37,8 +37,8 @@
     </style>
     <title></title>
   </head>
-  <body style="margin:0; padding: 0">
-    <div style="font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, arial; margin: 0; padding: 10px; letter-spacing: 0.5px;">
+  <body style="margin:0; padding: 0; font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, arial; letter-spacing: 0.5px;">
+    <div style="margin: 0; padding: 10px;">
       <div style="margin: 0 auto; max-width:600px;">
         <table width="100%">
           <tbody>
@@ -51,8 +51,11 @@
             </tr>
           </tbody>
         </table>
+        {{#if emailForFoo}}
+            <h2>{{emailForFoo}}</h2>
+        {{/if}}
         <p style="font-size:18px; line-height: 22px;">
-          Foo let's you track web page quality in preparation of <a href="https://www.foo.software/how-to-prepare-for-googles-new-page-experience-search-algorithm-change/" style="color: #1B47C1;" target="_blank">Google's looming algorithm change in May</a>, to prioritize page experience. The free plan provides a great introduction to our service. We just want to make sure you're aware of what you can get with a premium account.
+          Foo let's you track web page quality in preparation for Google's looming search engine <a href="https://webmasters.googleblog.com/2020/05/evaluating-page-experience.html" style="color: #1B47C1;" target="_blank">algorithm change</a> in May to prioritize <strong>page experience</strong>. You may find a premium plan better suited for your needs (starting at $5 / month). Below are premium features.
         </p>
         <table style="width: 100%;" class="features">
           <tbody>
@@ -63,7 +66,7 @@
               <td width="75%" class="textCellRight">
                 <h3>Free Trial</h3>
                 <p style="font-size:18px; line-height: 22px;">
-                  All premium plans offer a 1 month, no commitment free trial. Cancel anytime without penalty. If you decide you can get everything you need from the free plan, at least you tried! We won't get mad :D
+                  No commitment, 30 day free trial. Cancel anytime. With a taste of premium, if you still prefer free, at least you tried!
                 </p>
               </td>
             </tr>
@@ -75,7 +78,7 @@
               <td width="75%" class="textCellLeft">
                 <h3>Automated Lighthouse</h3>
                 <p style="font-size:18px; line-height: 22px;">
-                  Audits run automatically for premium accounts, multiple times a day. You simply add URLs and let Foo do the work. With this monitoring it's easy to pinpoint a cause of score change with a better knowledge of when it happened.
+                  Lighthouse runs multiple times a day on a schedule. You simply add URLs once and let Foo do the work. Pinpoint score changes when they happen.
                 </p>
               </td>
               <td width="25%" class="imageCell">
@@ -93,16 +96,19 @@
               <td width="75%" class="textCellRight">
                 <h3>Multiple URLs</h3>
                 <p style="font-size:18px; line-height: 22px;">
-                  Premium accounts support multiple URLs, with multiple automated runs for each. Select a plan that's right for you to support between 5 and 100 URLs. If you need more, let us know!
+                   Select a plan that's right for you to support between 5 and 100 URLs. If you need more, let us know! Lighthouse runs on each URL automatically on a schedule.
                 </p>
               </td>
             </tr>
           </tbody>
         </table>
         <p style="font-size:18px; line-height: 22px;">
-          To choose a premium plan or learn more, click on one of the services below. If you have a more custom set of needs, please <a href="https://www.foo.software/contact" style="color: #1B47C1;" target="_blank">reach out</a>. We also appreciate feedback about how we can improve our service and welcome feature requests.
+          Create a premium account by clicking on one of the services below or <a href="https://www.foo.software/contact" style="color: #1B47C1;" target="_blank">contact us</a> if you have a more custom set of needs. We also welcome any feedback and feature requests.
         </p>
-        <table style="width: 100%; padding: 0.5rem 0; background: #58e3be; border-radius: 5px;" class="features">
+      </div>
+    </div>
+    <div style="margin: 0 auto; max-width:600px;">
+        <table style="width: 100%; padding: 0.5rem 0; background: #58e3be;" class="features">
           <tbody>
             <tr>
               <td width="50%" class="imageCell">
@@ -133,7 +139,6 @@
             Unsubscribe Preferences
           </a>
         </p>
-      </div>
     </div>
   </body>
 </html>
