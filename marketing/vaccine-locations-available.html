@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width" initial-scale="1">
+      <!--[if !mso]>
+          <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <![endif]-->
+      <meta name="x-apple-disable-message-reformatting">
+      <style>
+        a {
+          color: #304ffe;
+        }
+      </style>
+      <title></title>
+  </head>
+  <body style="margin:0; padding: 0">
+    <div style="font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, arial; border-top: 4px #304ffe solid; margin: 0; padding: 10px;">
+      <div style="margin: 0 auto; max-width:600px;">
+        <table width="100%">
+          <tbody>
+            <tr>
+              <td width="70%"></td>
+              <td width="30%" style="text-align: right">
+                <a href="{{linkHome}}" style="border: 0; outline: 0; text-decoration: none;">
+                  <img width="40" height="40" src="https://lighthouse-check.s3.amazonaws.com/images/logo-simple-blue-light-180.png" />
+                </a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <p style="font-size:18px;">The following CVS locations have available vaccine appointments! Sign up for an appointment <a href="https://www.cvs.com/immunizations/covid-19-vaccine">here</a>.</p>
+        <ul style="font-size:18px;">
+          {{#each locations}}
+            <li>{{this}}</li>
+          {{/each}}
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>
