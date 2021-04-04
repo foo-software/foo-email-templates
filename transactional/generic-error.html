@@ -25,8 +25,13 @@
           </tbody>
         </table>
         <p style="font-size:18px;">
-          {{error}}
+          The below errors occurred:
         </p>
+        <ul style="font-size:18px;">
+          {{#each errors}}
+            <li>{{error}}</li>
+          {{/each}}
+        </ul>
       </div>
     </div>
   </body>
